@@ -126,7 +126,7 @@ The purpose of this Test Strategy is to outline a structured approach for testin
 
 ## 6. Test Environment
 
-**Staging URL:** `https://staging.cleancity.gov.ke`
+**Staging URL:** ` http://localhost:3000 `
 
 **Browsers:**
 
@@ -297,5 +297,6 @@ Once approved, it becomes the authoritative guide for all QA activities in the C
 
 **Document Version:** 1.0  
 **Last Updated:** 2025-06-28  
-**Prepared By:** Bednag QA, CleanCity
+**Prepared By:** Bednah QA, CleanCity
 **Reviewed By :** Ian / Wisani
+---
