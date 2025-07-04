@@ -1,4 +1,4 @@
-## 🧪 Test Cases for Authentication System – CleanCity Web App
+## 🧪 Test Cases for CleanCity - Waste Pickup Scheduler Web App
 
 # 📄 Introduction
 
