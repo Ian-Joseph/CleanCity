@@ -339,4 +339,166 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Expected Result:** Feedback is recorded successfully
 
 
+# 🧪 Dashboard & Analytics Test Cases 
 
+---
+
+## ✅ Positive Test Cases 
+
+### FR-023: Personalized Dashboard
+
+1. **Dashboard is displayed after user login**
+   - Precondition: User is registered and logged in
+   - Steps:
+     1. Open the application
+     2. Enter login credentials
+     3. Click the login button
+     4. Navigate to the dashboard
+   - Expected: Personalized dashboard is shown
+
+2. **Recent pickup requests appear correctly when present**
+   - Precondition: User has made at least one pickup request
+   - Steps:
+     1. Login to the system
+     2. Navigate to the dashboard
+     3. Locate the 'Recent pickups' section
+   - Expected: List of recent requests is visible
+
+3. **Handles no recent pickup requests gracefully**
+   - Precondition: User has no history
+   - Steps:
+     1. Login to the system
+     2. Open the dashboard
+   - Expected: Message like "No recent pickups"
+
+4. **Shows upcoming scheduled pickups**
+   - Precondition: Scheduled pickups exist
+   - Steps:
+     1. Login to the system
+     2. Open the dashboard
+     3. Scroll to the 'Upcoming pickups' section
+   - Expected: Upcoming pickups are listed
+
+5. **Handles case with no scheduled pickups**
+   - Precondition: None scheduled
+   - Steps:
+     1. Login to the system
+     2. Open the dashboard
+   - Expected: "No upcoming pickups" message shown
+
+6. **Displays environmental statistics properly**
+   - Precondition: User has pickup history
+   - Steps:
+     1. Login to the system
+     2. Open the dashboard
+     3. Locate the 'Environmental Impact' section
+   - Expected: Total waste, CO2 saved, and trees saved are shown
+
+7. **Displays achievement badges if earned**
+   - Precondition: User has earned badges
+   - Steps:
+     1. Login to the system
+     2. Navigate to the dashboard
+     3. Locate the 'Achievement Badges' section
+   - Expected: Badges are visible with correct labels
+
+8. **Handles absence of badges with friendly message**
+   - Precondition: New user
+   - Steps:
+     1. Login to the system
+     2. Open the dashboard
+   - Expected: Message encouraging action appears
+
+9. **Quick action buttons are visible and clickable**
+   - Precondition: User logged in
+   - Steps:
+     1. Login to the system
+     2. Navigate to the dashboard
+     3. Locate the quick action buttons
+   - Expected: Buttons are functional
+
+10. **Quick action buttons redirect to correct screens**
+    - Precondition: Buttons enabled
+    - Steps:
+      1. Login to the system
+      2. Navigate to the dashboard
+      3. Click on "Request Pickup" button
+    - Expected: Redirects to pickup form
+
+---
+
+## ❌ Negative Test Cases 
+
+1. **Access dashboard without login**
+   - Steps:
+     1. Open browser
+     2. Enter dashboard URL directly
+   - Expected: Redirect to login
+
+2. **Network error on dashboard**
+   - Steps:
+     1. Disconnect internet
+     2. Open dashboard
+   - Expected: Show network error
+
+3. **Pickup data fetch failure**
+   - Precondition: API down
+   - Steps:
+     1. Login to the system
+     2. Navigate to dashboard
+   - Expected: Error message shown
+
+4. **Corrupted pickup record**
+   - Precondition: Incomplete data exists
+   - Steps:
+     1. Login to the system
+     2. View dashboard
+   - Expected: “Date unavailable” or similar fallback
+
+5. **Quick action buttons unresponsive**
+   - Steps:
+     1. Login to the system
+     2. Disable JavaScript
+     3. Click any quick action button
+   - Expected: Error handled gracefully
+
+6. **Session hijack**
+   - Steps:
+     1. Acquire another user’s session ID
+     2. Try to access dashboard with it
+   - Expected: Access denied or logout
+
+---
+
+## ⚠️ Edge Cases 
+
+
+1. **Pickup with future date**
+   - Steps:
+     1. Schedule pickup for a future date
+     2. Open dashboard
+   - Expected: Date handled gracefully
+
+
+2. **Single badge display**
+   - Precondition: One badge earned
+   - Steps:
+     1. Login to the system
+     2. View dashboard
+   - Expected: Layout doesn’t break
+
+---
+
+## 🎨 UI/UX Test Cases 
+
+1. **Responsive layout on mobile/tablet**
+   - Steps:
+     1. Open dashboard on mobile emulator
+     2. Resize and interact with elements
+   - Expected: UI adapts smoothly
+
+2. **Loading state during data fetch**
+   - Steps:
+     1. Throttle network
+     2. Load dashboard
+   - Expected: Loading indicator or skeleton appears
