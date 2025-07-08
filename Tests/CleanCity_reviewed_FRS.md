@@ -3,10 +3,10 @@
 ## 📋 **Document Information**
 
 **Document Version:** 1.0  
-**Date:** [Current Date]  
+**Date:** [7/ July /2025]  
 **Project:** CleanCity - Waste Pickup Scheduler  
 **Prepared For:** QA Testing Teams  
-**Prepared By:** Development Team  
+**Prepared By:** CleanCity QA Team 
 
 ---
 
