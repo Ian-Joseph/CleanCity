@@ -295,9 +295,10 @@ Once approved, it becomes the authoritative guide for all QA activities in the C
 
 ---
 
-**Document Version:** 1.0  
+**Document Version:** 2.0  
 **Last Updated:** 2025-06-28  
 **Prepared By:** Bednah QA, CleanCity
+
 **Reviewed By :** Ian / Wisani
 
 ---
