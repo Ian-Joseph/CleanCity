@@ -158,7 +158,7 @@ The CleanCity application is designed to help users schedule waste pickups, repo
 
 ## 12. Environmental Needs
 
-**Test URL:** `https://staging.cleancity.gov.ke`
+**Test URL:** `http://localhost:3000 `
 
 **Supported Browsers:**
 
@@ -263,5 +263,5 @@ This document must be reviewed and approved by the following:
 
 **Prepared by:**  Bednah QA, CleanCity  
 **Reviewed by:** Ian , Wisani QA's CleanCity  
-**Version:** 1.0  
+**Version:** 2.0  
 **Status:** Final
