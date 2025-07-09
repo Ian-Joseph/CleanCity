@@ -224,27 +224,46 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 #### ✅ TC-UI-01: Verifying that placeholder texts exist
 **Test Steps:**
   1. Check email and password fields
+
 **Expected Result:** Placeholder like "Enter your email" visible
+
+**Actual Result:** All fields have visible placeholder text
+
 
 #### ✅ TC-UI-02: Verifying that required fields have indicator
 **Test Steps:**
   1. Check label next to required fields
-**Expected Result:** Asterisk (*) shown
+
+**Expected Result:** All required fields are marked, asterisk (*) is shown
+
+**Actual Result:** All required fields are not marked <!--fails -->
+
 
 #### ✅ TC-UI-03: Verifying field tab Navigation
 **Test Steps:**
   1. Use Tab key to move between fields
+
 **Expected Result:** Order flows logically
+
+**Actual Result:** Order flows logically
+
 
 #### ✅ TC-UI-04: Verifying password masking
 **Test Steps:**
   1. Type password
-**Expected Result:** Dots shown instead of visible text
+
+**Expected Result:** Dots are shown instead of visible text
+
+**Actual Result:** Dots are shown instead of visible text
+
 
 #### ✅ TC-UI-05: Verifying that UI is responsive
 **Test Steps:**
   1. Load form on mobile browser
+
 **Expected Result:** All inputs and buttons are usable
+
+**Actual Result:** All inputs and buttons are usable
 
 ---
 
