@@ -425,38 +425,67 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ## 4.2 Request Management
 
-### ✅ TC-009: Verifying that Pickup Request History is viewable
+### ❌ TC-009: Verifying that Pickup Request History is viewable
 
-1. Log in  
-2. Go to request history
+1. Log in as normal user
+2. Schedule a waste pickup
+3. Navigate to your dashboard and check on the requested pickups
+4. Alternatively navigate to the user profile and check on 'My Requests'
 
-**Expected Result:** List of all past pickup requests displayed
+**Expected Result:** List of all pickup requests displayed
 
-### ✅ TC-010: Verifying that Pending Pickup Request is cancellable
+**Actual Result:** No requests displayed. No scheduled requests were logged.
 
-1. Select a pending request  
-2. Click cancel
+### ❌ TC-010: Verifying that Pending Pickup Request is cancellable
+
+1. Log in as normal user
+2. Schedule a waste pickup
+3. Navigate to your dashboard and check on the requested pickups
+4. Alternatively navigate to the user profile and check on 'My Requests'
+5. Select a pending request  
+6. Click cancel
 
 **Expected Result:** Status changes to Cancelled
 
-### ✅ TC-011: Verifying that requests more than 24 hours away are modifiable
+**Actual Result:** No pending requests displayed. No scheduled requests were logged. No request was at all logged.
 
-1. Select request with pickup time more than 24 hours away  
-2. Update details (e.g., quantity)
+### ❌ TC-011: Verifying that requests more than 24 hours away are modifiable
+
+1. Log in as normal user
+2. Schedule a waste pickup
+3. Navigate to your dashboard and check on the requested pickups
+4. Alternatively navigate to the user profile and check on 'My Requests'
+5. Select request with pickup time more than 24 hours away  
+6. Update details (e.g., quantity)
 
 **Expected Result:** Details updated successfully
 
+**Actual Result:** No requests displayed. No scheduled requests were logged. No request was at all logged.
+
 ### ❌ TC-012: Modifying request less than 24 hours in advance
 
-1. Select request with pickup time less than 24 hours away  
-2. Attempt to modify details  
+1. Log in as normal user
+2. Schedule a waste pickup
+3. Navigate to your dashboard and check on the requested pickups
+4. Alternatively navigate to the user profile and check on 'My Requests'
+5. Select request with pickup time less than 24 hours away  
+6. Attempt to modify details  
+
 **Expected Result:** Error – modification not allowed
 
-### ✅ TC-013: Verifying that Status is displayed for request
+**Actual Result:** No requests displayed. No scheduled requests were logged. No request was at all logged.
 
-1. View request list
+### ❌ TC-013: Verifying that Status is displayed for request
+
+1. Log in as normal user
+2. Schedule a waste pickup
+3. Navigate to your dashboard and check on the requested pickups
+4. Alternatively navigate to the user profile and check on 'My Requests'
+5. View request list
 
 **Expected Result:** Each request shows status (Pending, Confirmed, Completed, Cancelled)
+
+**Actual Result:** No requests displayed. No scheduled requests were logged. No request was at all logged.
 
 ---
 
