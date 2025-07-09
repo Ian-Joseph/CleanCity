@@ -180,27 +180,42 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ### 👮‍♂️ Access Control Test Cases
 
-#### ✅ TC-A-01: Verifying Admin sees Admin panel
+#### ✅ TC-A-01: Verifying that Admin sees Admin panel
 **Test Steps:**
   1. Login as admin
   2. Check navigation bar
+
 **Expected Result:** "Admin" link is visible
+
+**Actual Result:** "Admin" link is visible
+
 
 #### ✅ TC-A-02: Verifying that regular user cannot see Admin Panel
 **Test Steps:**
   1. Login as regular user
   2. Check nav links
+
 **Expected Result:** Admin link is hidden
+
+**Actual Result:** Admin link is hidden
+
 
 #### ❌ TC-A-03: Verifying direct Dashboard Access by guest
 **Test Steps:**
   1. Visit `/dashboard` without logging in
-**Expected Result:** Redirect to login
+
+**Expected Result:** Dashboard not accessible, user is redirected to login
+
+**ActuaL Result:** Dashboard not accessible, user is redirected to login
+
 
 #### ❌ TC-A-04: Verifying regular user cannot accessing Admin panel URL
 **Test Steps:**
   1. Copy admin URL and visit as regular user
-**Expected Result:** Access denied or redirected
+
+**Expected Result:** Access denied, user is redirected to the login page
+
+**Actual Result:** Access denied, user is redirected to the login page
 
 ---
 
