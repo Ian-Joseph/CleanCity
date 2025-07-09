@@ -261,9 +261,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Test Steps:**
   1. Load form on mobile browser
 
-**Expected Result:** All inputs and buttons are usable
+**Expected Result:** All inputs fields and buttons are usable
 
-**Actual Result:** All inputs and buttons are usable
+**Actual Result:** All inputs fields and buttons are usable
 
 ---
 
@@ -284,6 +284,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
       
 **Expected Result:** Pickup is scheduled successfully
 
+**Actual Result:** Pickup is scheduled successfully
+
+
 ### ❌ TC-002: Verifying scheduling Pickup with a past date
 1. Navigate to scheduling page
 2. Enter a registered full name  e.g "John Doe"
@@ -295,7 +298,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 8. Enter any additional description  
 9. Click "Submit request" button
 
-**Expected Result:** Error message displayed – date must be in the future
+**Expected Result:** Pickup is scheduled successfully, "date must be in the future" error message displayed
+
+**Actual Result:** Pickup is scheduled successfully <!--fails -->
 
 ### ❌ TC-002: Attempting to Schedule a pickup with invalid email
 1. Navigate to scheduling page
@@ -308,8 +313,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 8. Enter any additional description  
 9. Click "Submit request" button
 
-**Expected Result:** Error message displayed – invalid email
+**Expected Result:** Pickup not successfully scheduled, "invalid email" error message is displayed
 
+**Actual Result:** Pickup is scheduled successfully <!--fails -->
 
 ### ❌ TC-003: Scheduling a pickup without selecting waste type
 1. Navigate to scheduling page
@@ -320,35 +326,56 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 6. Enter a future date e.g "11/07/2025"
 7. Enter any additional description  
 8. Click "Submit request" button
-**Expected Result:** Error message – waste type is required
+
+**Expected Result:** Pickup not successfully scheduled,"waste type is required" error message is displayed
+
+**Actual Result:** Pickup not successfully scheduled,"waste type is required" error message is displayed
 
 ### ❌ TC-004: Verifying scheduling pickup without quantity
 1. Leave quantity empty  
 2. Fill other fields  
 3. Submit request  
-**Expected Result:** Error message – quantity is required
+
+**Expected Result:** Pickup not successfully scheduled,"quantity is required" error message is displayed
+
+**Actual Result:** Quantity field is missing on the "schedule pickup" page <!--critical-- >
+
 
 ### ❌ TC-005: Verifying scheduling pickup with too long special instructions
 1. Enter 201+ characters in special instructions  
 2. Fill other fields  
 3. Submit request  
-**Expected Result:** Error message – max 200 characters allowed
+
+**Expected Result:** Pickup not successfully scheduled, "max 200 characters allowed" error message is displayed
+
+**Actual Result:**  "Special instructions" input field is missing on the "schedule pickup" page <!--fails-->
+
 
 ### ❌ TC-006: Verifying scheduling pickup with hour less than 24 
 1. Select a date less than 24 hours in future  
 2. Fill all required fields  
-3. Submit request  
-**Expected Result:** Validation error – must be at least 24 hours in advance
+3. Submit request 
+
+**Expected Result:** Pickup not successfully scheduled,"must be at least 24 hours in advance" validation error is displayed
+
+**Actual Result:** Pickup is successfully scheduled <!--fails -->
+
 
 ### ✅ TC-007: Verifying that available time slots are viewable
 1. Go to scheduling page  
-2. Choose valid pickup date  
+2. Choose valid pickup date
+
 **Expected Result:** Available time slots are displayed
+
+**Actual Result:** Available time slots are not displayed <!--fails -->
 
 ### ❌ TC-008: Verifying scheduling multiple pickups on same date
 1. Schedule a pickup for a given date  
-2. Attempt to schedule another pickup for same date  
-**Expected Result:** Error – only one pickup per date allowed
+2. Attempt to schedule another pickup for same date 
+
+**Expected Result:** Only one pickup per date allowed
+
+**Actual Result:** Multiple pickups per date allowed <!--fails -->
 
 ---
 
