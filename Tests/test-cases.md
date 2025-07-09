@@ -94,13 +94,22 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   1. Enter: Email: "admin@cleancity.com"
   2. Password: "admin123"
   3. Click "Login" button
-- **Expected Result:** Redirect to Dashboard; admin panel link is visible
+- **Expected Result:** Admin is logged successfully and Redirected to Dashboard; admin panel link is visible
 
-- **Actual Result:** Admin is logged in however the admin panel link is not visible <!--critical--->
+- **Actual Result:** Admin is logged successfully and the admin panel link is not visible 
 
 #### ❌ TC-L-03: verifying user login with invalid password
 - **Test Steps:**
   1. Enter valid registered user email e.g user1@test.com
+  2. Enter incorrect password e.g "Test"
+  3. Click "Login" button
+- **Expected Result:** Login unsuccesfull; error "Invalid email or password" is displayed
+
+- **Actual Result:** Login attempt successful <!--fails-->
+
+#### ❌ TC-L-03: verifying Admin login with invalid password
+- **Test Steps:**
+  1. Enter valid admin email e.g admin@test.com
   2. Enter incorrect password e.g "Test"
   3. Click "Login" button
 - **Expected Result:** Login unsuccesfull; error "Invalid email or password" is displayed
