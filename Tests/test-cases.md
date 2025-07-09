@@ -19,6 +19,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   4. Confirm password: "NewPass123"
   5. Click "Register" button
 - **Expected Result:** Account is successfully created; user redirected to login with a success message
+- **Actual Result:** Account is successfully created; user redirected to login with a success message <!--passes-->
 
 #### ❌ TC-R-02: Verifying user registration with missing name field
 - **Test Steps:**
@@ -27,7 +28,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   3. Enter password: "NewPass123"
   4. Confirm password: "NewPass123"
   5. Click "Register" button
-- **Expected Result:** Error displayed: "Full Name is required"
+- **Expected Result:** Account is not created, error displayed: "please fill out this fied"
+- **Actual Result:** Account is not created, "please fill out this fied" error is displayed <!--passes-->
 
 #### ❌ TC-R-03: Verifying user registration with an already existing email
 **Test Steps:**
@@ -37,7 +39,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   4.Confirm password: "TestPass123"
   4. Click "Register" button
   
-**Expected Result:** Error displayed: "Email already exists"
+**Expected Result:** Account is not created, error displayed: "Email already exists"
+**Actual Result:** Account is created succesfully <!--fails-->
 
 #### ❌ TC-R-04: Verifying user registration with password mismatch
 **Test Steps:**
@@ -46,7 +49,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   3. Enter password: "TestPass123"
   4. Confirm password: "123abc"
   5. Click "Register" button
-**Expected Result:** Error displayed: "Passwords do not match"
+**Expected Result:** Account is not created, "Passwords do not match" is displayed
+**Actual Result:** Confirmed password field is missing on the account registration form <!--fails -- critical-->
+
 
 #### ❌ TC-R-05: Verify user registration with password too short
 **Test Steps:**
@@ -56,7 +61,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   4. Confirm password: "TestPass"
   5. Click "Register" button
      
-- **Expected Result:** Error: "Password must be at least 8 characters"
+- **Expected Result:** Account is not created, error: "Password must be at least 8 characters" is displayed
+- **Actual Result:** Account is created succesfully <!--fails-- high-->
 
 #### ❌ TC-R-06: Verifying user registration with nvalid email format
 - **Test Steps:**
@@ -66,33 +72,40 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   5. Confirm password: "NewPass123"
   6. Click "Register" button
      
-- **Expected Result:** Error: "Invalid email address"
+- **Expected Result:** Account is not created; error: "Invalid email address" is displayed
+- **Actual Result:** Account is created succesfuly; error: "Invalid email address" is displayed <!--fails-->
 
 ---
 
 ### 🔐 Login Test Cases
 
-#### ✅ TC-L-01: Verifying valid user login
+#### ✅ TC-L-01: Verifying that valid user can login
 - **Test Steps:**
   1. Go to login page
   2. Enter: Email: "user1@cleancity.com"
   3. Enter Password: "TestPass123"
   4. Click "Login" button
-- **Expected Result:** Redirect to Dashboard; user-specific links shown
+- **Expected Result:** User is logged succesfully and redirected to Dashboard; user-specific links shown
 
-#### ✅ TC-L-02: Verifying valid Admin login
+- **Actual Result:** User is logged succesfully and redirected to Dashboard; user-specific links shownn
+
+#### ✅ TC-L-02: Verifying that valid Admin can login
 - **Test Steps:**
   1. Enter: Email: "admin@cleancity.com"
   2. Password: "admin123"
   3. Click "Login" button
 - **Expected Result:** Redirect to Dashboard; admin panel link is visible
 
+- **Actual Result:** Admin is logged in however the admin panel link is not visible <!--critical--->
+
 #### ❌ TC-L-03: verifying user login with invalid password
 - **Test Steps:**
   1. Enter valid registered user email e.g user1@test.com
   2. Enter incorrect password e.g "Test"
   3. Click "Login" button
-- **Expected Result:** Error: "Invalid email or password"
+- **Expected Result:** Login unsuccesfull; error "Invalid email or password" is displayed
+
+- **Actual Result:** Login attempt successful <!--fails-->
 
 #### ❌ TC-L-04: Verifying user login with non-existent email
 - **Test Steps:**
@@ -100,14 +113,19 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   2. Enter any password
   3. Click "Login" button
      
-- **Expected Result:** Error: "Invalid email or password"
+- **Expected Result:** login not successfull; error: "Invalid email or password" is displayed
+
+- **Actual Result:** Login attempt successful <!--fails-->
 
 #### ❌ TC-L-05: verifying user login with empty Email
 - **Test Steps:**
   1. Leave email blank
   2. Enter valid password e.g "TestPass123"
   3. Click "Login" button
-- **Expected Result:** Error: "Email is required"
+- **Expected Result:** Login attempt not successfull, error: "Email is required"
+
+- **Actual Result:** Login attemp unsuccesful attempt successful <!--passes-->
+
 
 #### ❌ TC-L-06: Verifying user login with empty Password
 - **Test Steps:**
@@ -115,7 +133,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   2. Leave password blank
   3. Click "Login" button
      
-- **Expected Result:** Error: "Password is required"
+- **Expected Result:** Log in attempt not successful, error: "Password is required" is displayed
+
+- **Actual Result:** Login attempt unsuccesful attempt successful; error: "Password is required" is dispayed <!--passes-->
 
 #### ❌ TC-L-07: Verifying SQL Injection Attempt
 - **Test Steps:**
@@ -123,6 +143,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   2. Password `' OR 1=1 --`
   3. Submit
 - **Expected Result:** Login blocked; generic error shown
+
+- **Expected Result:** Login successful <!--fails-->
 
 ---
 
@@ -132,17 +154,27 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Precondition:** User is logged in
 **Test Steps:**
   1. Click on Logout
-**Expected Result:** Session ends; redirected to login page
+
+**Expected Result:** Session ends; the user redirected to login page
+
+**Actual Result:** Session ends; the user is redirected to login page
 
 #### ✅ TC-LO-02: Verifying that Logout is hidden for guest user
 **Test Steps:**
   1. Access app without logging in
+
 **Expected Result:** Logout button is not visible
+
+**Actual Result:** Logout button is not visible
+
 
 #### ✅ TC-LO-03: Verifying logout via URL as guest
 **Test Steps:**
   1. Access logout endpoint manually in browser
-**Expected Result:** Redirected to login/homepage; no error
+
+**Expected Result:** Logout button not accessible, user is redirected to login
+
+**Actual Result:** Logout button not accessible, user is redirected to login
 
 ---
 
