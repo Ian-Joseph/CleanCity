@@ -42,7 +42,7 @@
 - **Actual**: "Your waste pickup request has been submitted!" message is displayed
 - **Severity**: Medium
 
-## Pickup Scheduling
+## 4.2 Request Management
 
 ## Bug Report 3
 
