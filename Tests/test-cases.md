@@ -995,6 +995,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The blog section loads successfully and displays a list of blog posts.
 
+**Actual Result:** The blog section loads successfully and displays a list of blog posts.
+
 ---
 
 ## TC-031-02: Verify that all blog posts are related to waste management topics
@@ -1005,6 +1007,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Review the titles and content of several blog posts.
 
 **Expected Result:** All displayed blog posts focus on waste management topics.
+
+**Actual Result:** All displayed blog posts focus on waste management topics.
 
 ---
 
@@ -1019,6 +1023,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The like count on the blog post increases by one.
 
+**Actual Result:** The "Like" button is missing
+
 ---
 
 ## TC-032-02: Verify that the like count increases when a user likes a post
@@ -1031,6 +1037,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The like count increments by one after liking.
 
+**Actual Result:** The "Like" button is missing
+
 ---
 
 ## TC-032-03: Verify that users can add comments on blog posts
@@ -1042,7 +1050,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Enter a comment in the comment box.  
 4. Click "Submit."
 
-**Expected Result:**  The comment appears under the blog post.
+**Expected Result:** User Should be able to comment on the blog
+
+**Actual Result:**  Users can comment on the blog
 
 ---
 
@@ -1054,7 +1064,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Add a comment and submit.  
 3. Navigate away and then back to the same post.
 
-**Expected Result:** The comment appears only under the blog post it was added to.
+**Expected Result:** The comment should appear only under the blog post it was added to.
+
+**Actual Result:** The comment appears only under the blog post it was added to.
 
 ---
 
@@ -1066,7 +1078,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Click the "Share" button or icon.  
 3. Select a social media platform or copy the shareable link.
 
-**Expected Result:** The blog post can be shared correctly using the selected method.
+**Expected Result:** The blog post should be shareable correctly using the selected method.
+
+**Actual Result:** The blog post can be shared correctly using the selected method.
 
 ---
 
@@ -1079,6 +1093,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The system prompts the user to log in before performing the action.
 
+**Actual Result:** The system does not prompts the user to log in before performing the action.
+
 ---
 
 ## TC-033-01: Verify that only authorized users can access the blog post creation interface
@@ -1090,6 +1106,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Log in as an authorized user and navigate to the same page.
 
 **Expected Result:** Only the authorized user can access the blog post creation interface.
+
+**Actual Result:** The blog post creation interface is not available.
 
 ---
 
@@ -1104,6 +1122,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The new blog post is visible in the blog listing.
 
+**Expected Result:** The blog post creation interface is not available.
+
 ---
 
 ## TC-033-03: Verify authorized users can edit existing blog posts
@@ -1116,6 +1136,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 4. Save the changes.
 
 **Expected Result:** The blog post is updated with the new content.
+
+**Actual Result:** Users can't update the existing blog posts
 
 ---
 
@@ -1130,6 +1152,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The post visibility reflects the published/unpublished status accordingly.
 
+**Actual Result:** Users can't publish or unpublish blog posts
+
 ---
 
 ## TC-033-05: Verify authorized users can delete blog posts
@@ -1142,6 +1166,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The blog post is removed from the system.
 
+**Actual Result:** Authorized users cannot delete blog posts.
+
 ---
 
 ## TC-033-06: Verify unauthorized users cannot create, edit, publish, or delete blog posts
@@ -1152,6 +1178,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Attempt to access create, edit, publish, or delete features.
 
 **Expected Result:** Access is denied or these options are not visible.
+
+**Actual Result:** Regular users can create or delete any post.
 
 ---
 
@@ -1166,6 +1194,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The assigned categories are saved and displayed with the blog post.
 
+**Actual Result:**  Users cannot assign any categories
+
 ---
 
 ## TC-034-02: Verify users can add multiple tags to a blog post
@@ -1178,6 +1208,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 4. Save the post.
 
 **Expected Result:** The tags are saved and displayed with the blog post.
+
+**Actual Result:** User cannot add any tags the blog post.
 
 ---
 
@@ -1193,7 +1225,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to the blog section.  
 2. Select a category from the filter menu.
 
-**Expected Result:**  Only blog posts in the selected category are displayed.
+**Expected Result:**  Only blog posts in the selected category should be displayed.
+
+**Actual Result:**  Only blog posts in the selected category are displayed.
 
 ---
 
@@ -1209,7 +1243,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to the blog section.  
 2. Select a tag from the filter menu.
 
-**Expected Result:**  Only blog posts with the selected tag are displayed.
+**Expected Result:**  Only blog posts with the selected tag should be displayed.
+
+**Actual Result:**  Only blog posts with the selected tag are displayed.
 
 ---
 
@@ -1220,7 +1256,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to any blog post.  
 2. Observe the categories and tags shown.
 
-**Expected Result:** Categories and tags are visible and correctly linked/displayed on the post.
+**Expected Result:** Categories and tags should be visible and correctly linked/displayed on the post.
+
+**Actual Result:** Categories and tags are visible and correctly linked/displayed on the post.
 
 ---
 
@@ -1235,7 +1273,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to the page displaying eco tips.  
 2. Observe the eco tips section for at least 15 seconds.
 
-**Expected Result:**  Eco tips rotate to the next tip every 5 seconds.
+**Expected Result:**  Eco tips should rotate to the next tip every 5 seconds.
+
+**Actual Result:**  Eco tips rotates to the next tip every 5 seconds.
 
 ---
 
@@ -1251,7 +1291,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Select an environmental quiz.  
 3. Start the quiz.
 
-**Expected Result:** The quiz loads and users can interact with the questions.
+**Expected Result:** The quiz should load and users interact with the questions.
+
+**Actual Result:** The quiz loads and users can interact with the questions.
 
 ---
 
@@ -1266,7 +1308,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Complete all questions in an environmental quiz.  
 2. Submit the quiz.
 
-**Expected Result:** The system displays the quiz score correctly.
+**Expected Result:** The system should displays the quiz score correctly.
+
+**Actual Result:** The system displays the quiz score correctly.
 
 ---
 
@@ -1280,7 +1324,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Review the answers and explanations provided after quiz submission.
 
-**Expected Result:**  Each answer is accompanied by a clear explanation.
+**Expected Result:**  Each answer should be accompanied by a clear explanation.
+
+**Actual Result:**  Each answer is accompanied by a clear explanation.
 
 ---
 
@@ -1294,7 +1340,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Open the environmental infographics page.
 
-**Expected Result:** Infographics with relevant environmental statistics are visible and clear.
+**Expected Result:** Infographics with relevant environmental statistics should be visible and clear.
+
+**Actual Result:** Infographics with relevant environmental statistics are visible and clear.
 
 ---
 
@@ -1308,7 +1356,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Click each action button (e.g., “Go to Blog,” “Start Quiz,” “View Infographics”).
 
-**Expected Result:** Each button redirects the user to the correct corresponding feature or page.
+**Expected Result:** Each button should redirect the user to the correct corresponding feature or page.
+
+**Actual Result:** Each button redirects the user to the correct corresponding feature or page.
 
 ---
 
@@ -1325,7 +1375,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Enter text for the post.  
 4. Click "Submit" or "Post."
 
-**Expected Result:**  The post appears in the community feed.
+**Expected Result:**  The post should appears in the community feed.
+
+**Actual Result:**  The post appears in the community feed.
 
 ---
 
@@ -1341,7 +1393,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to the community feed.  
 2. Click the "Like" button on a post.
 
-**Expected Result:**  The like count for the post increases by one.
+**Expected Result:**  The like count for the post should increase by one.
+
+**Actual Result:**  The like count for the post decreases by one. <!--fails-->
 
 ---
 
@@ -1358,7 +1412,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Select a post.  
 3. Enter a comment and submit.
 
-**Expected Result:** The comment appears under the selected post.
+**Expected Result:** The comment should appear under the selected post.
+
+**Actual Result:** The comment appears under the selected post.
 
 ---
 
@@ -1373,7 +1429,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to the community feed.  
 2. Observe the order of posts.
 
-**Expected Result:**  Posts are displayed from newest to oldest.
+**Expected Result:**  Posts should be displayed from newest to oldest.
+
+**Actual Result:**  Posts are displayed from newest to oldest.
 
 ---
 
@@ -1390,7 +1448,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Enter a tip or experience in the text field.  
 4. Click "Submit."
 
-**Expected Result:** The tip or experience is posted and visible in the community feed.
+**Expected Result:** The tip or experience is posted and should be visible in the community feed.
+
+**Actual Result:** The tip or experience is posted and visible in the community feed.
 
 ---
 
@@ -1408,7 +1468,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Navigate to the user profile page.
 
-**Expected Result:**  The profile page displays the user’s information (name, email, stats, etc.).
+**Expected Result:**  The profile page should display the user’s information (name, email etc.).
+
+**Actual Result:**  The profile page displays the user’s information (name, email.).
 
 ---
 
@@ -1425,7 +1487,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Change any editable field (e.g., name, bio).  
 4. Save the changes.
 
-**Expected Result:** Profile information is updated and displayed correctly.
+**Expected Result:** Profile information should be updated and displayed correctly.
+
+**Actual Result:** Profile information is updated and displayed correctly.
 
 ---
 
@@ -1439,7 +1503,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Navigate to the user profile page.
 
-**Expected Result:**  Total pickups are displayed as a numeric value.
+**Expected Result:**  Total pickups should be displayed as a numeric value.
+
+**Actual Result:**  Total pickups are not displayed <!--fails-->
 
 ---
 
