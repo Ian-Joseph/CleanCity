@@ -26,18 +26,20 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Test Steps:**
   1. Leave the name field blank
-  2. Enter email: "<newuser@test.com>"
+  2. Enter email: newuser@test.com"
   3. Enter password: "NewPass123"
   4. Confirm password: "NewPass123"
   5. Click "Register" button
+
 - **Expected Result:** Account is not created, error displayed: "please fill out this fied"
+
 - **Actual Result:** Account is not created, "please fill out this fied" error is displayed <!--passes-->
 
 ### ❌ TC-R-03: Verifying user registration with an already existing email
 
 **Test Steps:**
   1.Enter full name: "New Test User"
-  2. Use an existing email: "<user1@cleancity.com>"
+  2. Use an existing email: "user1@cleancity.com"
   3.Enter password: "NewPass123".
   4.Confirm password: "TestPass123"
   4. Click "Register" button
@@ -50,7 +52,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Test Steps:**
 
   1. Enter full name: "New Test User"
-  2. Enter email: "<newuser@test.com>"
+  2. Enter email: "newuser@test.com"
   3. Enter password: "TestPass123"
   4. Confirm password: "123abc"
   5. Click "Register" button
@@ -62,7 +64,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Test Steps:**
 
   1. Enter full name: "New Test User"
-  2. Enter email: "<newuser@test.com>"
+  2. Enter email: "newuser@test.com"
   3. Enter password: "TestPass"
   4. Confirm password: "TestPass"
   5. Click "Register" button
@@ -74,7 +76,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Test Steps:**
   1. Enter full name: "New Test User"
-  2. Enter email: "<newuser@test.com>"
+  2. Enter email: "newuser@test.com"
   3. Enter password: "NewPass123"
   4. Confirm password: "NewPass123"
   5. Click "Register" button
@@ -498,11 +500,18 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** Status updates reflect immediately in UI
 
+**Actual Result:**  No pick up requests displayed hence status can't be changed. <!--fails-->
+
+
 ### ✅ TC-015: Verifying Notification on Status Change
 
 1. Submit request  
-2. System updates status  
+2. System updates status
+
 **Expected Result:** Notification received (email, push, etc.)
+
+**Actual Result:** Blocked 
+
 
 ### ✅ TC-016: Verifying Add Feedback after completion
 
@@ -511,6 +520,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Submit feedback  
 
 **Expected Result:** Feedback is recorded successfully
+
+**Actual Result:**  Feedback is recorded successfully
+
 
 ## 🧪 Dashboard & Analytics Test Cases
 
@@ -527,7 +539,12 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      2. Enter login credentials
      3. Click the login button
      4. Navigate to the dashboard
-   **Expected:** Personalized dashboard is shown
+
+   **Expected results :** Personalized dashboard is shown
+
+   **Actual results:** Personalized dashboard is shown
+
+
 
 2. **Verifying that recent pickup requests appear correctly when present**
     **Precondition:** User has made at least one pickup request
@@ -535,14 +552,20 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      1. Login to the system
      2. Navigate to the dashboard
      3. Locate the 'Recent pickups' section
-  **Expected:** List of recent requests is visible
+
+  **Expected results:** List of recent requests is visible
+
+   **Actual results:** List of recent requests is not visible <!--fails-->
 
 3. **Verifying that the system handles no recent pickup requests gracefully**
    **Precondition:** User has no history
    **Steps**
      1. Login to the system
      2. Open the dashboard
-   **Expected:** Message like "No recent pickups"
+
+   **Expected Results:** Message like "No recent pickups"
+
+   **Actual Results:** Message like "No recent pickups"
 
 4. **Verifying that upcoming scheduled pickups are showing**
    **Precondition:** Scheduled pickups exist
@@ -550,14 +573,21 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      1. Login to the system
      2. Open the dashboard
      3. Scroll to the 'Upcoming pickups' section
-   **Expected:** Upcoming pickups are listed
+
+   **Expected Results:** Upcoming pickups are listed
+
+    **Actual Results:** Upcoming pickups are not listed <!--fails-->
+
 
 5. **Verifying how the system handles case with no scheduled pickups**
    **Precondition:** None scheduled
    **Steps**
      1. Login to the system
      2. Open the dashboard
-   **Expected:** "No upcoming pickups" message shown
+
+   **Expected Results :** "No upcoming pickups" message shown
+
+   **Actual Results :** "No upcoming pickups" message is not displayed <!--fails -->
 
 6. **Verifying that environmental statistics is displayrd properly**
    **Precondition:** User has pickup history
@@ -565,7 +595,10 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      1. Login to the system
      2. Open the dashboard
      3. Locate the 'Environmental Impact' section
-   **Expected:** Total waste, CO2 saved, and trees saved are shown
+
+   **Expected results:** Total waste, CO2 saved, and trees saved are shown
+
+   **Actual results:** Total waste, CO2 saved, and trees saved are not displayed
 
 7. **Verifying that achievement badges are displayed if earned**
    **Precondition:** User has earned badges
@@ -573,14 +606,22 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      1. Login to the system
      2. Navigate to the dashboard
      3. Locate the 'Achievement Badges' section
-   **Expected:** Badges are visible with correct labels
+
+   **Expected Results:** Badges are visible with correct labels
+
+   **Actual Results:** Badges are not visible <!--fails-->
+
 
 8. **Verifying that absence of badges is handled with friendly message**
    **Precondition:** New user
    **Steps**
      1. Login to the system
      2. Open the dashboard
-   **Expected:** Message encouraging action appears
+
+   **Expected Results:** Message encouraging action appears
+
+   **Actual Results:** Message encouraging action is not displayed.
+
 
 9. **Verifying that Quick action buttons are visible and clickable**
    **Precondition:** User logged in
@@ -588,75 +629,107 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      1. Login to the system
      2. Navigate to the dashboard
      3. Locate the quick action buttons
-   **Expected:** Buttons are functional
+
+   **Expected Results:** Quick action buttons are functional
+
+   **Actaul Results:** No quick action buttons are displayed
+
 
 10. **Verifying that Quick action buttons redirect to correct screens**
     **Precondition:** Buttons enabled
     **Steps**
       1. Login to the system
       2. Navigate to the dashboard
-      3. Click on "Request Pickup" button
-    **Expected:** Redirects to pickup form
+      3. Click on "Missed Pickup" button
+
+    **Expected Results:** User is redirected to pickup form
+
+    **Actual Results:** User is not redirected to missed pickup form <!--fails -->
 
 ---
 
-## ❌ Negative Test Cases
+##  Negative Test Cases
 
 1. **Verifying Access dashboard without login**
    **Steps**
      1. Open browser
      2. Enter dashboard URL directly
-   **Expected:** Redirect to login
+
+   **Expected Results:** User is redirect to login page
+
+   **Actual Results:** User is redirected to login page
+
 
 2. **Verifying that Network error is displayed on dashboard**
    **Steps**
      1. Disconnect internet
      2. Open dashboard
-   **Expected:** Show network error
+
+   **Expected Results:** Network error is displayed
+
+   **Actual Results:** Network error is displayed
 
 3. **Verifying Pickup data fetch failure**
    **Precondition:** API down
    **Steps**
      1. Login to the system
      2. Navigate to dashboard
-   **Expected:** Error message shown
+
+   **Expected Results:** Error message shown
 
 4. **Verifying corrupted pickup record**
    **Precondition:** Incomplete data exists
    **Steps**
      1. Login to the system
      2. View dashboard
-   **Expected:** “Date unavailable” or similar fallback
 
+   **Expected results:** “Date unavailable” or similar fallback
+
+    **Actual results:** Not executed
+
+   
 5. **Verifying that Quick action buttons are unresponsive**
    **Steps**
      1. Login to the system
      2. Disable JavaScript
      3. Click any quick action button
-   **Expected:** Error handled gracefully
+
+   **Expected results:** Error is handled gracefully
+
+   **Actual  results:** Error is handled gracefully
 
 6. **Verifying Session hijack**
    **Steps**
      1. Acquire another user’s session ID
      2. Try to access dashboard with it
-   **Expected:** Access denied or logout
+
+   **Expected Results:** Access is denied
+
+   **Actual Results:** Access is denied 
 
 ---
 
-## ⚠️ Edge Cases
+##  Edge Cases
 
 1. **Verifying Pickup with future date**
    **Steps**
      1. Schedule pickup for a future date
      2. Open dashboard
-   **Expected:** Date handled gracefully
+
+   **Expected Results:** Pick up is handled gracefully
+
+   **Actual Results:** Pick up is handled gracefully
+
 
 2. **Verifying that single badge displayed**
    **Precondition:** One badge earned
    **Steps**
      1. Login to the system
      2. View dashboard
-   **Expected:** Layout doesn’t break
+
+   **Expected Results:** Layout doesn’t break
+
+    **Actual Results:** Layout doesn’t break
 
 ---
 
@@ -666,13 +739,17 @@ The test cases cover both **functional** and **non-functional** aspects of the s
    **Steps**
      1. Open dashboard on mobile emulator
      2. Resize and interact with elements
-   **Expected:** UI adapts smoothly
+
+   **Expected Results :** UI adapts smoothly
+   **Expected Results :** UI adapts smoothly
 
 2. **Verifying loading state during data fetch**
    **Steps**
      1. Throttle network
      2. Load dashboard
+
    **Expected:** Loading indicator or skeleton appears
+   
 
 ## 🧪 Gamification Test Cases
 
