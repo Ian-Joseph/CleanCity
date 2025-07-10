@@ -741,6 +741,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      2. Resize and interact with elements
 
    **Expected Results :** UI adapts smoothly
+   
    **Expected Results :** UI adapts smoothly
 
 2. **Verifying loading state during data fetch**
@@ -749,7 +750,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      2. Load dashboard
 
    **Expected:** Loading indicator or skeleton appears
-   
+
 
 ## 🧪 Gamification Test Cases
 
