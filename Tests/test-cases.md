@@ -741,7 +741,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
      2. Resize and interact with elements
 
    **Expected Results :** UI adapts smoothly
-   
+
    **Expected Results :** UI adapts smoothly
 
 2. **Verifying loading state during data fetch**
@@ -774,6 +774,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
  **Expected Result:**  A badge labeled **"First Pickup Scheduled"** is awarded and visible.
 
+ **Actual Result:** Badges section is missing <!--fails high-->
+
 ---
 
 ### 2. Verifying that badge is awarded after 10 pickups completed
@@ -788,6 +790,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   4. Navigate to **Badges** section.
 
  **Expected Result:**  **"10 Pickups Completed"** badge appears in the user's badge list.
+
+ **Actual Result:** Badges section is missing <!--fails high-->
 
 ---
 
@@ -805,6 +809,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
  **Expected Result:**  Badge for **"Perfect Recycling Score"** is displayed.
 
+ **Actual Result:** Badges section is missing <!--fails high-->
+
 ---
 
 ### 4. Verifying award badge for community contributor
@@ -820,6 +826,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
  **Expected Result:**  **"Community Contributor"** badge is awarded.
 
+ **Actual Result:** Badges section is missing <!--fails high-->
+
 ---
 
 ### 5. Verifying award points for completed pickup
@@ -834,6 +842,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
  **Expected Result:** Points are added to the user's total.
 
+ **Actual Result:** No points are displayed on the dashboard or under user profile.
+
 ---
 
 ### 6. Verifying that level increases after reaching point threshold
@@ -846,6 +856,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   2. Refresh the dashboard or profile page.
 
  **Expected Result:**  User’s level increases and reflects the new level.
+
+ **Actual Result:**  User’s level is missing. <!--fails ->
 
 ---
 
@@ -861,9 +873,11 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** Current point total and level are displayed.
 
+**Actual Result:** Current point total and level are not displayed. <!--fails -- >
+
 ---
 
-## ❌ Negative Test Cases
+## Negative Test Cases
 
 ---
 
@@ -878,6 +892,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
  **Expected Result:**  **"First Pickup Scheduled"** badge is not duplicated.
 
+ **Actual Result:**  **Blocked** badge session is missing
+
 ---
 
 ### 9. Verifying that user receives points without valid activity
@@ -889,6 +905,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   1. Attempt to manipulate point API via console or external tool.
 
  **Expected Result:** System rejects the manipulation; points remain unchanged.
+
+ **Actual Result:** Not executed - no point awarding logic in the application
 
 ---
 
@@ -903,6 +921,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
  **Expected Result:** Level reflects reduced points accurately.
 
+ **Actal Result:** Not executed - no point awarding logic in the application
+
 ---
 
 ### 11. Verifying that badge is not awarded without completing valid community action
@@ -913,6 +933,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   2. Reload badge list.
 
  **Expected Result:** Community badge is not awarded.
+
+ **Actual Result:** Badge section is missing
+
 
 ---
 
@@ -928,6 +951,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
  **Expected Result:** Each badge has unique icons and labels.
 
+ **Expected Result:** Badge section is missing
+
 ---
 
 ### 13. Verifying that points and levels use consistent styles and colors
@@ -937,6 +962,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   1. View dashboard and profile.
 
  **Expected Result:**  Progress bar and colors match level progression.
+
+  **Actual Result:**  No progress bar is visible.
 
 ---
 
@@ -948,6 +975,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
   2. View badges and level display.
 
 **Expected Result:**  All elements adjust without overflow or distortion.
+
+**Actual Result:** Badge section is missing
 
 ---
 
