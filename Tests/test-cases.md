@@ -2054,7 +2054,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Open the application on a desktop screen (1920x1080 resolution or higher).  
 2. Navigate through various sections.
 
-**Expected Result:** Verify that the layout is displayed correctly and adapts to the desktop screen size.
+**Expected Result:** The layout should be displayed correctly and adapt to the desktop screen size.
+
+**Actual Result:** The layout is displayed correctly and adapts to the desktop screen size.
 
 ---
 
@@ -2069,7 +2071,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Open the application on a tablet.  
 2. Navigate through different components and menus.
 
-**Expected Result:**  Verify that the interface adjusts correctly to tablet dimensions and remains functional.
+**Expected Result:** Interface should adjusts correctly to tablet dimensions and remains functional.
+
+**Actual Result:** Interface adjusts correctly to tablet dimensions and remains functional.
 
 ---
 
@@ -2084,7 +2088,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Launch the system on a mobile browser.  
 2. Browse key pages such as home, navigation, and forms.
 
-**Expected Result:** Verify that the layout and functionality are optimized for mobile screen sizes.
+**Expected Result:** The layout and functionality should be optimized for mobile screen sizes.
+
+**Actual Result:** The layout and functionality are optimized for mobile screen sizes.
 
 ---
 
@@ -2099,7 +2105,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Perform the same core tasks (e.g., submitting a form) on each screen size.  
 2. Observe functionality and layout behavior.
 
-**Expected Result:**  Verify that the system maintains the same core features and functions on all screen sizes.
+**Expected Result:**  The system should maintain the same core features and functions on all screen sizes.
+
+**Actual Result:**  The system maintains the same core features and functions on all screen sizes.
 
 ---
 
@@ -2116,7 +2124,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Run a WCAG compliance test using a tool like WAVE or axe.  
 2. Review any violations reported.
 
-**Expected Result:**  Verify that the system does not contain critical WCAG 2.1 AA accessibility issues.
+**Expected Result:** The system should not contain critical WCAG 2.1 AA accessibility issues.
+
+**Actual Result:** The system contains critical WCAG 2.1 AA accessibility issues (contrast ratio failing) <!--fails-->
 
 ---
 
@@ -2131,7 +2141,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Use Tab, Shift+Tab, and Enter keys to navigate the interface.  
 2. Interact with buttons, forms, and menus.
 
-**Expected Result:** Verify that all interactive elements are accessible via keyboard.
+**Expected Result:** All interactive elements should be accessible via keyboard.
+
+**Expected Result:** All interactive elements are keyboard accessible.
 
 ---
 
@@ -2146,7 +2158,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Inspect images using a screen reader or browser dev tools.  
 2. Look for presence and relevance of alt text.
 
-**Expected Result:**  Verify that all images have meaningful and relevant `alt` attributes.
+**Expected Result:** All images should have meaningful and relevant `alt` attributes.
+
+**Actual Result:** All images have meaningful and relevant `alt` attributes.
 
 ---
 
@@ -2161,7 +2175,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate through the system using a screen reader.  
 2. Listen to the output for accuracy and flow.
 
-**Expected Result:**  Verify that content is read correctly, with proper labels and headings.
+**Expected Result:**  Content should be read correctly, with proper labels and headings.
 
 ---
 
@@ -2178,7 +2192,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Open the main navigation menu.  
 2. Review labels and test each navigation link.
 
-**Expected Result:** Verify that the menu is clearly structured and functional.
+**Expected Result:** The menu should be clearly structured and functional.
+
+**Actual Result:** The nav menu is clearly structured and functional.
 
 ---
 
@@ -2193,7 +2209,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to a detailed or inner page (e.g., post details).  
 2. Observe the breadcrumb trail.
 
-**Expected Result:**  Verify that breadcrumbs are present and correctly represent the page structure.
+**Expected Result:**  Breadcrumbs should be present and correctly represents the page structure.
+
+**Actual Result:** No breadcrumbs are present
 
 ---
 
@@ -2209,7 +2227,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Submit the query.  
 3. Review the results.
 
-**Expected Result:**  Verify that relevant and accurate search results are returned.
+**Expected Result:** search results are returned should be relevant and accurate 
+
+**Actual Result:** search results returned are relevant and accurate 
 
 ---
 
@@ -2227,7 +2247,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Open browser dev tools → Application tab → localStorage.  
 3. Inspect stored key-value pairs.
 
-**Expected Result:**  Verify that user data is correctly saved in localStorage.
+**Expected Result:**  User data should be correctly saved in localStorage.
+
+**Actual Result:**  User data is not correctly saved in localStorage.<!--fails-->
 
 ---
 
@@ -2243,7 +2265,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Reopen the browser and revisit the site.  
 3. Check for restored user data or preferences.
 
-**Expected Result:** Verify that previously stored data persists after the browser is closed and reopened.
+**Expected Result:** Previously stored data should persists after the browser is closed and reopened.
+
+**Actual Result:** Previously stored data does not persists after the browser is closed and reopened.<!--fails -->
 
 ---
 
@@ -2259,7 +2283,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Attempt an action that requires additional localStorage.  
 3. Observe system behavior.
 
-**Expected Result:** Verify that the system provides an appropriate warning or fallback without crashing.
+**Expected Result:** The system should provide an appropriate warning or fallback without crashing.
+
+**Actual Result:** Not executed
 
 ---
 
@@ -2276,7 +2302,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Submit the form with invalid inputs (e.g., empty required fields, invalid email).  
 2. Observe the response.
 
-**Expected Result:** Verify that input validation prevents the form from submitting and displays error messages.
+**Expected Result:** Input validation should before the form is submited and error messages are displayed.
+
+**Actual Result:** Input validation occurs before the form is submited and appropriate error messages are displayed
 
 ---
 
@@ -2292,7 +2320,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Submit the form.  
 3. Check if input is executed or interpreted.
 
-**Expected Result:**  Verify that malicious input is rejected or sanitized, and no injection occurs.
+**Expected Result:** Malicious input should be rejected or sanitized, and no injection occurs.
+
+**Actual Result:** Malicious input is not rejected <!--fails -->
 
 ---
 
@@ -2307,7 +2337,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Submit a post or comment containing HTML/script elements.  
 2. View the content in the user interface.
 
-**Expected Result:**  Verify that the content is sanitized and unsafe elements (e.g., scripts) are not rendered.
+**Expected Result:** The content should be sanitized and unsafe elements (e.g., scripts) are not rendered.
+
+**Actual Result:**  The content is not sanitized and unsafe elements (e.g., scripts) are rendered.
 
 ---
 
@@ -2328,7 +2360,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Use browser developer tools → Network tab to measure page load time.  
 3. Navigate to pages like Home, Dashboard, and Blog.
 
-**Expected Result:**  Each page must fully load within 3 seconds, as reported in the browser’s performance panel.
+**Expected Result:**  Each page should fully load within 3 seconds, as reported in the browser’s performance panel.
+
+**Actual Result:**  Each page fully loads within 3 seconds, as reported in the browser’s performance panel.
 
 ---
 
@@ -2344,7 +2378,10 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Click interactive elements such as buttons, links, and tabs (e.g., submit a form or open a dropdown).  
 2. Measure time between action and visible feedback (e.g., new content appearing, modal opening, confirmation shown).
 
-**Expected Result:**  The system must show a visible response to each user interaction within 1 second (1000 milliseconds), verified using browser dev tools or stopwatch.
+**Expected Result:**  The system should show a visible response to each user interaction within 1 second (1000 milliseconds)
+
+**Actual Result:**  The system shows a visible response to each user interaction within 1 second (1000 milliseconds)
+
 
 ---
 
