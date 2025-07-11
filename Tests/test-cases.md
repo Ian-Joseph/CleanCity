@@ -1521,6 +1521,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** CO₂ saved is displayed with appropriate units (e.g., kg).
 
+**Actual Result:** CO₂ saved is not displayed <!--fails -->
+
 ---
 
 ## TC-046-03: Verify that monthly activity charts are displayed
@@ -1534,7 +1536,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Go to the profile page.  
 2. Locate the activity chart section.
 
-**Expected Result:** A chart showing monthly activity is visible and reflects user data accurately.
+**Expected Result:** A chart showing monthly activity should be visible and reflect user data.
+
+**Actual Result:** A chart showing monthly activity is visible and reflects user data.
 
 ---
 
@@ -1551,7 +1555,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Select and upload an image file.  
 4. Save the changes.
 
-**Expected Result:** The uploaded profile picture is displayed on the profile.
+**Expected Result:** The uploaded profile picture should be displayed on the profile.
+
+**Actual Result:** The uploaded profile picture is displayed on the profile.
 
 ---
 
@@ -1565,7 +1571,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Navigate to the user’s profile page.
 
-**Expected Result:**  Statistics such as CO₂ saved, waste diverted, or participation metrics are displayed on the profile.
+**Expected Result:**  Statistics such as CO₂ saved, waste diverted, or participation metrics should be displayed on the profile.
+
+**Actual Result:**  Statistics such as CO₂ saved, waste diverted, or participation metrics are not displayed on the profile. <!--fails-->
 
 ---
 
@@ -1587,6 +1595,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The user is now following the selected community member.
 
+**Actual Result:** Other users profile are not accessible
+
 ---
 
 ## TC-050-01: Verify that the news feed displays community activities
@@ -1600,7 +1610,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Navigate to the news feed section.
 
-**Expected Result:** The news feed displays posts and activities (e.g., new posts, achievements) in chronological order.
+**Expected Result:** The news feed should display posts and activities (e.g., new posts, achievements) in chronological order.
+
+**Actual Result:** The news feed displays posts and activities (e.g., new posts, achievements) in chronological order.
 
 ---
 
@@ -1619,6 +1631,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The selected achievement is posted to the community/news feed.
 
+**Actual Result:**  No achievement are available
+
 ---
 
 ## TC-052-01: Verify that community challenges and events are supported
@@ -1635,6 +1649,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The user is registered or marked as a participant in the selected community challenge or event.
 
+**Actual Result:**  "Challenges" section is missing <!--fails -->
 ---
 
 ## Administrative Functions – Request Management Test Cases
@@ -1653,7 +1668,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Navigate to the admin dashboard.  
 2. Click on the “Pickup Requests” section.
 
-**Expected Result:**  All existing pickup requests are displayed in a list or table.
+**Expected Result:**  All pickup requests should be displayed in a table.
+
+**Actual Result:**  All pickup requests are displayed in a list or table.
 
 ---
 
@@ -1670,7 +1687,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Select a pending request.  
 3. Click the “Approve” option.
 
-**Expected Result:**  The request status changes to “Approved.”
+**Expected Result:**  The request status should change to “Approved.”
+
+**Actual Result:**  Admin cannot approve a pick up request <!--fails -->
 
 ---
 
@@ -1687,7 +1706,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Select a pending request.  
 3. Click the “Reject” option.
 
-**Expected Result:**  The request status changes to “Rejected.”
+**Expected Result:**  The request status should change to “Rejected.”
+
+**Expected Result:**   Admin cannot reject a pick up request <!--fails-- >
 
 ---
 
@@ -1705,7 +1726,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Change the desired details (e.g., location, notes).  
 4. Save the changes.
 
-**Expected Result:**  The updated request reflects the modifications made.
+**Expected Result:**  The updated request should reflect the modifications made.
+
+**Actual Result:**  No pickup request are displayed <!--fails -->
 
 ---
 
@@ -1722,7 +1745,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Enter or select the pickup date and time.  
 3. Save the assignment.
 
-**Expected Result:**  The request shows the assigned date and time.
+**Expected Result:**  The request should show the assigned date and time.
+
+**Actual Result:**  No request the admin can modify
 
 ---
 
