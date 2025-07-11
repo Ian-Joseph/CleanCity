@@ -2367,7 +2367,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 4. Submit a form and observe result.  
 5. Check layout, media, and responsiveness.
 
-**Expected Result:**  Verify that all features work correctly, pages display properly, and no visual or functional issues occur in Chrome.
+**Expected Result:** All features should work correctly, pages display properly, and no visual or functional issues occur in Chrome.
+
+**Actual Result:** All features works correctly, pages display properly, and no visual or functional issues occur in Chrome.
 
 ---
 
@@ -2383,7 +2385,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Repeat core flows: navigation, form submission, interaction with UI components.  
 3. Inspect visual layout and responsiveness.
 
-**Expected Result:**  Verify that all functions operate normally and the layout is consistent in Firefox.
+**Expected Result:** All functions should operate normally and the layout should be consistent in Firefox.
+
+**Actual Result:** All functions operates normally and the layout is consistent in Firefox.
 
 ---
 
@@ -2399,7 +2403,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Perform key tasks (login, navigation, blog interaction).  
 3. Inspect responsiveness and check for rendering issues.
 
-**Expected Result:**  Verify that the system behaves consistently and renders correctly in Safari.
+**Expected Result:** The system should behave consistently and render correctly in Safari.
+
+**Actual Result:**  The system behaves consistently and renders correctly in Safari.
 
 ---
 
@@ -2415,7 +2421,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Complete major actions (view blog, submit a request, post in community).  
 3. Check layout and UI alignment.
 
-**Expected Result:**  Verify that the system works properly and consistently in Edge with no errors or broken visuals.
+**Expected Result:**  The system should work properly and consistently in Edge with no errors or broken visuals.
+
+**Expected Result:**  The system works properly and consistently in Edge with no errors or broken visuals.
 
 ---
 
@@ -2435,7 +2443,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Leave required form fields empty and try to submit.  
 3. Observe the error messages displayed.
 
-**Expected Result:**  Verify that error messages clearly describe the issue and suggest how to correct it (e.g., "Password is incorrect. Try again or reset it.").
+**Expected Result:**  Error messages should clearly describe the issue and suggest how to correct it (e.g., "Password is incorrect.").
+
+**Actual Result:**  Error messages clearly describe the issue and suggest how to correct it (e.g., "Password is incorrect.").
 
 ---
 
@@ -2450,8 +2460,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Attempt to upload a file that exceeds size limits or uses an unsupported format.  
 2. Observe feedback or help links provided by the system.
 
-**Expected Result:**  
-Verify that the system shows guidance like: "Upload must be under 5MB. Only JPG and PNG formats are supported."
+**Expected Result:**  The system should show guidance like: "Upload must be under 5MB. Only JPG and PNG formats are supported."
 
 ---
 
@@ -2467,7 +2476,9 @@ Verify that the system shows guidance like: "Upload must be under 5MB. Only JPG 
 2. Attempt to perform actions like submitting a form or saving changes.  
 3. Observe the system behavior.
 
-**Expected Result:**  Verify that the system shows a message like “Connection lost. Please check your network and try again” without crashing or losing user input.
+**Expected Result:** The system should shows a message like “Connection lost. Please check your network and try again” without crashing or losing user input.
+
+**Actual Result:** The system shows error message “Connection lost. Please check your network and try again” without crashing or losing user input.
 
 ---
 
@@ -2481,10 +2492,12 @@ Verify that the system shows guidance like: "Upload must be under 5MB. Only JPG 
 
 **Test Steps:**  
 
-1. Enter invalid data (e.g., malformed email) into a form field.  
+1. Enter invalid data (e.g., invalid email) into a form field.  
 2. Observe if validation triggers before submission.
 
-**Expected Result:**  Verify that the system provides instant feedback (e.g., “Please enter a valid email address”) without waiting for form submission.
+**Expected Result:**  The system should provide instant feedback (e.g., “Please enter a valid email address”) without waiting for form submission.
+
+**Actual Result:**  The system does not provide instant feedback (e.g., “Please enter a valid email address”) without waiting for form submission.
 
 ---
 
@@ -2499,7 +2512,9 @@ Verify that the system shows guidance like: "Upload must be under 5MB. Only JPG 
 1. Leave required fields empty or enter invalid input.  
 2. Attempt to submit the form.
 
-**Expected Result:**  Verify that the form is not submitted and validation errors are displayed, preventing incomplete or incorrect submissions.
+**Expected Result:** The form should not submitted and validation errors should be displayed, preventing incomplete or incorrect submissions.
+
+**Actual Result:** The form should is not submitted and validation errors are displayed, preventing incomplete or incorrect submissions.
 
 ---
 
@@ -2515,6 +2530,8 @@ Verify that the system shows guidance like: "Upload must be under 5MB. Only JPG 
 2. Try to submit the form.  
 3. Observe the error indicators.
 
-**Expected Result:**  Verify that invalid fields are clearly highlighted (e.g., red border or icon), and error messages are shown near the relevant input.
+**Expected Result:** Invalid fields should be clearly highlighted (e.g., red border or icon), and error messages are shown near the relevant input.
+
+**Actual Result:**  Invalid fields are clearly highlighted (e.g., red border or icon), and error messages are shown near the relevant input.
 
 ---
