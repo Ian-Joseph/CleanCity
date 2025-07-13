@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-# ✅ Launch Edge browser
+# Launch Edge browser
 options = Options()
 # options.add_argument("--headless")  # Optional: hide browser
 driver = webdriver.Edge(options=options)
@@ -30,7 +30,7 @@ def go_to_by_link(link_text, expected_page_id):
         print(f"[FAIL] Could not navigate via link '{link_text}':", e)
         raise
 
-# ========== 1️⃣ LOGIN ==========
+# ========== LOGIN ==========
 go_to_by_link("Login", "login-page")
 Email = driver.find_element(By.ID, "login-email")
 Email.send_keys("user@cleancity.com")
@@ -44,7 +44,7 @@ login_success = WebDriverWait(driver, 5).until(
 assert login_success.is_displayed(), " Login success message not displayed"
 print(" Login success message shown\n")
 
-# ========== 2️⃣ REGISTRATION ==========
+# ========== REGISTRATION ==========
 go_to_by_link("Register", "register-page")
 driver.find_element(By.ID, "register-name").send_keys("Test User")
 driver.find_element(By.ID, "register-email").send_keys("testuser@cleancity.com")
@@ -57,7 +57,7 @@ register_success = WebDriverWait(driver, 5).until(
 assert register_success.is_displayed(), "Registration success message not shown"
 print(" Registration success message shown\n")
 
-# ========== 3️⃣ PICKUP REQUEST ==========
+# ========== PICKUP REQUEST ==========
 go_to_by_link("Home", "home-page")
 driver.find_element(By.ID, "fullName").send_keys("Test Pickup")
 driver.find_element(By.ID, "location").send_keys("Nairobi")
@@ -68,9 +68,9 @@ pickup_success = WebDriverWait(driver, 5).until(
     EC.visibility_of_element_located((By.ID, "success-message"))
 )
 assert pickup_success.is_displayed(), "Pickup success message not displayed"
-print("✅ Pickup request success message shown\n")
+print(" Pickup request success message shown\n")
 
-# ========== 4️⃣ FEEDBACK ==========
+# ========== FEEDBACK ==========
 go_to_by_link("Feedback", "feedback-page")
 driver.find_element(By.ID, "requestId").send_keys("REQ001")
 driver.find_element(By.ID, "reason").send_keys("Missed Pickup")
@@ -82,13 +82,13 @@ feedback_success = WebDriverWait(driver, 5).until(
 assert feedback_success.is_displayed(), " Feedback success message not shown"
 print(" Feedback submitted successfully\n")
 
-# ========== 5️⃣ ADMIN PANEL ==========
+# ========== ADMIN PANEL ==========
 go_to_by_link("Admin", "admin-page")
 request_dropdown = driver.find_element(By.ID, "requestSelect")
 status_dropdown = driver.find_element(By.ID, "statusSelect")
 assert request_dropdown.is_displayed() and status_dropdown.is_displayed(), " Admin dropdowns not visible"
 print("Admin panel loaded with dropdowns\n")
 
-# ✅ Done
+# Done
 driver.quit()
 print(" All test steps completed successfully!")
