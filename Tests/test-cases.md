@@ -10,7 +10,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ## 🔐 Registration Test Cases
 
-### ✅ TC-R-01: Verifying user registration with Valid Inputs
+### TC-R-01: Verifying user registration with Valid Inputs
 
 - **Preconditions:** User is on the Register page
 - **Test Steps:**
@@ -22,7 +22,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 - **Expected Result:** Account is successfully created; user redirected to login with a success message
 - **Actual Result:** Account is successfully created; user redirected to login with a success message <!--passes-->
 
-### ❌ TC-R-02: Verifying user registration with missing name field
+### TC-R-02: Verifying user registration with missing name field
 
 - **Test Steps:**
   1. Leave the name field blank
@@ -35,7 +35,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** Account is not created, "please fill out this fied" error is displayed <!--passes-->
 
-### ❌ TC-R-03: Verifying user registration with an already existing email
+### TC-R-03: Verifying user registration with an already existing email
 
 **Test Steps:**
   1.Enter full name: "New Test User"
@@ -47,7 +47,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Expected Result:** Account is not created, error displayed: "Email already exists"
 **Actual Result:** Account is created succesfully <!--fails-->
 
-### ❌ TC-R-04: Verifying user registration with password mismatch
+### TC-R-04: Verifying user registration with password mismatch
 
 **Test Steps:**
 
@@ -59,7 +59,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Expected Result:** Account is not created, "Passwords do not match" is displayed
 **Actual Result:** Confirmed password field is missing on the account registration form <!--fails -- critical-->
 
-#### ❌ TC-R-05: Verify user registration with password too short
+#### TC-R-05: Verify user registration with password too short
 
 **Test Steps:**
 
@@ -72,7 +72,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 - **Expected Result:** Account is not created, error: "Password must be at least 8 characters" is displayed
 - **Actual Result:** Account is created succesfully <!--fails-- high-->
 
-#### ❌ TC-R-06: Verifying user registration with nvalid email format
+#### TC-R-06: Verifying user registration with nvalid email format
 
 - **Test Steps:**
   1. Enter full name: "New Test User"
@@ -88,7 +88,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ### 🔐 Login Test Cases
 
-#### ✅ TC-L-01: Verifying that valid user can login
+#### TC-L-01: Verifying that valid user can login
 
 - **Test Steps:**
   1. Go to login page
@@ -99,7 +99,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** User is logged succesfully and redirected to Dashboard; user-specific links shownn
 
-#### ✅ TC-L-02: Verifying that valid Admin can login
+#### TC-L-02: Verifying that valid Admin can login
 
 - **Test Steps:**
   1. Enter: Email: "<admin@cleancity.com>"
@@ -109,7 +109,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** Admin is logged successfully and the admin panel link is not visible
 
-#### ❌ TC-L-03: verifying user login with invalid password
+#### TC-L-03: verifying user login with invalid password
 
 - **Test Steps:**
   1. Enter valid registered user email e.g <user1@test.com>
@@ -119,7 +119,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** Login attempt successful <!--fails-->
 
-#### ❌ TC-L-03: verifying Admin login with invalid password
+#### TC-L-03: verifying Admin login with invalid password
 
 - **Test Steps:**
   1. Enter valid admin email e.g <admin@test.com>
@@ -129,7 +129,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** Login attempt successful <!--fails-->
 
-#### ❌ TC-L-04: Verifying user login with non-existent email
+#### TC-L-04: Verifying user login with non-existent email
 
 - **Test Steps:**
   1. Enter unused email e.g "user@test"
@@ -140,7 +140,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** Login attempt successful <!--fails-->
 
-#### ❌ TC-L-05: verifying user login with empty Email
+#### TC-L-05: verifying user login with empty Email
 
 - **Test Steps:**
   1. Leave email blank
@@ -150,7 +150,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** Login attemp unsuccesful attempt successful <!--passes-->
 
-#### ❌ TC-L-06: Verifying user login with empty Password
+#### TC-L-06: Verifying user login with empty Password
 
 - **Test Steps:**
   1. Enter valid registered email e.g "<user1@test.com>"
@@ -161,7 +161,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 - **Actual Result:** Login attempt unsuccesful attempt successful; error: "Password is required" is dispayed <!--passes-->
 
-#### ❌ TC-L-07: Verifying SQL Injection Attempt
+#### TC-L-07: Verifying SQL Injection Attempt
 
 - **Test Steps:**
   1. Enter `admin@cleancity.com`
@@ -175,7 +175,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ### 🚪 Logout Test Cases
 
-#### ✅ TC-LO-01: Verifying user logout from logged-in state
+#### TC-LO-01: Verifying user logout from logged-in state
 
 **Precondition:** User is logged in
 **Test Steps:**
@@ -186,7 +186,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Session ends; the user is redirected to login page
 
-#### ✅ TC-LO-02: Verifying that Logout is hidden for guest user
+#### TC-LO-02: Verifying that Logout is hidden for guest user
 
 **Test Steps:**
 
@@ -196,7 +196,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Logout button is not visible
 
-#### ✅ TC-LO-03: Verifying logout via URL as guest
+#### TC-LO-03: Verifying logout via URL as guest
 
 **Test Steps:**
 
@@ -210,7 +210,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ### 👮‍♂️ Access Control Test Cases
 
-#### ✅ TC-A-01: Verifying that Admin sees Admin panel
+#### TC-A-01: Verifying that Admin sees Admin panel
 
 **Test Steps:**
 
@@ -221,7 +221,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** "Admin" link is visible
 
-#### ✅ TC-A-02: Verifying that regular user cannot see Admin Panel
+#### TC-A-02: Verifying that regular user cannot see Admin Panel
 
 **Test Steps:**
 
@@ -232,7 +232,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Admin link is hidden
 
-#### ❌ TC-A-03: Verifying direct Dashboard Access by guest
+#### TC-A-03: Verifying direct Dashboard Access by guest
 
 **Test Steps:**
 
@@ -242,7 +242,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **ActuaL Result:** Dashboard not accessible, user is redirected to login
 
-#### ❌ TC-A-04: Verifying regular user cannot accessing Admin panel URL
+#### TC-A-04: Verifying regular user cannot accessing Admin panel URL
 
 **Test Steps:**
 
@@ -256,7 +256,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ### 🧪 UI & Usability Test Cases
 
-#### ✅ TC-UI-01: Verifying that placeholder texts exist
+#### TC-UI-01: Verifying that placeholder texts exist
 
 **Test Steps:**
 
@@ -266,7 +266,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** All fields have visible placeholder text
 
-#### ✅ TC-UI-02: Verifying that required fields have indicator
+#### TC-UI-02: Verifying that required fields have indicator
 
 **Test Steps:**
 
@@ -276,7 +276,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** All required fields are not marked <!--fails -->
 
-#### ✅ TC-UI-03: Verifying field tab Navigation
+#### TC-UI-03: Verifying field tab Navigation
 
 **Test Steps:**
 
@@ -286,7 +286,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Order flows logically
 
-#### ✅ TC-UI-04: Verifying password masking
+#### TC-UI-04: Verifying password masking
 
 **Test Steps:**
 
@@ -296,7 +296,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Dots are shown instead of visible text
 
-#### ✅ TC-UI-05: Verifying that UI is responsive
+#### TC-UI-05: Verifying that UI is responsive
 
 **Test Steps:**
 
@@ -312,7 +312,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ## 4.1 Pickup Scheduling
 
-### ✅ TC-001: Verifying scheduling Pickup with valid inputs
+### TC-001: Verifying scheduling Pickup with valid inputs
 
 1. Navigate to scheduling page
 2. Enter a registered full name  e.g "John Doe"
@@ -328,7 +328,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Pickup is scheduled successfully
 
-### ❌ TC-002: Verifying scheduling Pickup with a past date
+### TC-002: Verifying scheduling Pickup with a past date
 
 1. Navigate to scheduling page
 2. Enter a registered full name  e.g "John Doe"
@@ -344,7 +344,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Pickup is scheduled successfully <!--fails -->
 
-### ❌ TC-002: Attempting to Schedule a pickup with invalid email
+### TC-002: Attempting to Schedule a pickup with invalid email
 
 1. Navigate to scheduling page
 2. Enter a registered full name  e.g "John Doe"
@@ -360,7 +360,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Pickup is scheduled successfully <!--fails -->
 
-### ❌ TC-003: Scheduling a pickup without selecting waste type
+### TC-003: Scheduling a pickup without selecting waste type
 
 1. Navigate to scheduling page
 2. Enter a registered full name  e.g "John Doe"
@@ -375,7 +375,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Pickup not successfully scheduled,"waste type is required" error message is displayed
 
-### ❌ TC-004: Verifying scheduling pickup without quantity
+### TC-004: Verifying scheduling pickup without quantity
 
 1. Leave quantity empty  
 2. Fill other fields  
@@ -385,7 +385,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Quantity field is missing on the "schedule pickup" page <!--critical-- >
 
-### ❌ TC-005: Verifying scheduling pickup with too long special instructions
+### TC-005: Verifying scheduling pickup with too long special instructions
 
 1. Enter 201+ characters in special instructions  
 2. Fill other fields  
@@ -395,7 +395,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:**  "Special instructions" input field is missing on the "schedule pickup" page <!--fails-->
 
-### ❌ TC-006: Verifying scheduling pickup with hour less than 24
+### TC-006: Verifying scheduling pickup with hour less than 24
 
 1. Select a date less than 24 hours in future  
 2. Fill all required fields  
@@ -405,7 +405,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Pickup is successfully scheduled <!--fails -->
 
-### ✅ TC-007: Verifying that available time slots are viewable
+### TC-007: Verifying that available time slots are viewable
 
 1. Go to scheduling page  
 2. Choose valid pickup date
@@ -414,7 +414,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** Available time slots are not displayed <!--fails -->
 
-### ❌ TC-008: Verifying scheduling multiple pickups on same date
+### TC-008: Verifying scheduling multiple pickups on same date
 
 1. Schedule a pickup for a given date  
 2. Attempt to schedule another pickup for same date
@@ -427,7 +427,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ## 4.2 Request Management
 
-### ❌ TC-009: Verifying that Pickup Request History is viewable
+###  TC-009: Verifying that Pickup Request History is viewable
 
 1. Log in as normal user
 2. Schedule a waste pickup
@@ -438,7 +438,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** No requests displayed. No scheduled requests were logged.
 
-### ❌ TC-010: Verifying that Pending Pickup Request is cancellable
+### TC-010: Verifying that Pending Pickup Request is cancellable
 
 1. Log in as normal user
 2. Schedule a waste pickup
@@ -451,7 +451,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** No pending requests displayed. No scheduled requests were logged. No request was at all logged.
 
-### ❌ TC-011: Verifying that requests more than 24 hours away are modifiable
+### TC-011: Verifying that requests more than 24 hours away are modifiable
 
 1. Log in as normal user
 2. Schedule a waste pickup
@@ -464,7 +464,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** No requests displayed. No scheduled requests were logged. No request was at all logged.
 
-### ❌ TC-012: Modifying request less than 24 hours in advance
+### TC-012: Modifying request less than 24 hours in advance
 
 1. Log in as normal user
 2. Schedule a waste pickup
@@ -477,7 +477,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Actual Result:** No requests displayed. No scheduled requests were logged. No request was at all logged.
 
-### ❌ TC-013: Verifying that Status is displayed for request
+### TC-013: Verifying that Status is displayed for request
 
 1. Log in as normal user
 2. Schedule a waste pickup
@@ -493,7 +493,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ## 4.3 Request Tracking
 
-### ✅ TC-014: Verifying real-time Status Update
+### TC-014: Verifying real-time Status Update
 
 1. Submit pickup request  
 2. Trigger status change in system (e.g., Confirmed)
@@ -503,7 +503,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Actual Result:**  No pick up requests displayed hence status can't be changed. <!--fails-->
 
 
-### ✅ TC-015: Verifying Notification on Status Change
+### TC-015: Verifying Notification on Status Change
 
 1. Submit request  
 2. System updates status
@@ -513,7 +513,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Actual Result:** Blocked 
 
 
-### ✅ TC-016: Verifying Add Feedback after completion
+### TC-016: Verifying Add Feedback after completion
 
 1. Wait for pickup completion  
 2. Navigate to feedback section  
@@ -528,7 +528,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ---
 
-## ✅ Positive Test Cases
+## Positive Test Cases
 
 ### FR-023: Personalized Dashboard
 
@@ -1970,7 +1970,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 ---
 
-## Notification System – Test Cases
+## Notification System Test Cases
 
 ---
 
