@@ -1988,6 +1988,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The notification bell displays a badge showing the number of unread notifications.
 
+**Actual Result:** The notification bell doesn't display a badge showing the number of unread notifications.
+
 ---
 
 ## TC-066-01: Verify that pickup confirmations and updates trigger notifications
@@ -2005,6 +2007,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** A notification appears indicating the update to the pickup request.
 
+**Actual Result:**  Blocked - Admin cannot approve , modify or update pickup request <!--critical -->
+
 ---
 
 ## TC-066-02: Verify that new blog posts trigger notifications
@@ -2021,6 +2025,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** A notification for the new blog post is displayed.
 
+**Actual Result:** **Blocked** Admins cannot publish new blog
+
 ---
 
 ## TC-066-03: Verify that community interactions trigger notifications
@@ -2035,7 +2041,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Another user likes or comments on your post.  
 2. Open your notifications.
 
-**Expected Result:** A notification is shown for the community interaction.
+**Expected Result:** A notification should be shown for the community interaction.
+
+**Actual Result:** A notification is not shown for the community interaction.
 
 ---
 
@@ -2052,6 +2060,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Open notifications.
 
 **Expected Result:** A notification appears for the unlocked achievement.
+
+**Expected Result:** 
 
 ---
 
