@@ -1763,7 +1763,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Go to the pickup requests section.  
 2. Apply a filter (e.g., by status, date, user).
 
-**Expected Result:**  The list updates to show only requests matching the filter criteria.
+**Expected Result:**  The list should update to show only requests matching the filter criteria.
+
+**Actual Result:**  The list updates to show only requests matching the filter criteria.
 
 ---
 
@@ -1779,7 +1781,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Enter a keyword or request ID in the search bar.  
 2. Submit the search.
 
-**Expected Result:**  Relevant pickup requests matching the search term are displayed.
+**Expected Result:**  Relevant pickup request should match the search term are displayed.
+
+**Actual Result:**  Admin cannot search pickup requests <!--fail -->
 
 ---
 
@@ -1801,6 +1805,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** A list of all registered users is displayed.
 
+**Actual Result:** Admins cannot see list of all registered users.
+
 ---
 
 ## TC-058-01: Verify that admins can change user roles
@@ -1820,6 +1826,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The selected user’s role is updated and reflected in their profile.
 
+**Actual Result:**  Admins cannot change user roles.
+
 ---
 
 ## TC-059-01: Verify that admins can suspend user accounts
@@ -1837,6 +1845,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 4. Confirm the action.
 
 **Expected Result:**  The user’s account status changes to “Suspended.”
+
+**Actual Result:**  Admin cannot suspend registered user accounts
 
 ---
 
@@ -1856,6 +1866,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The user account is permanently removed from the system.
 
+**Actual Result:**  Admins cannot delete user accounts
+
 ---
 
 ## TC-060-01: Verify that the system provides user activity reports
@@ -1871,6 +1883,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Open the user activity report.
 
 **Expected Result:**  The report displays user activities such as logins, posts, pickups, or other tracked actions.
+
+**Atual Result:**  The system does not provide user activity reports.
 
 ---
 
@@ -2045,7 +2059,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 1. Open the notifications panel.  
 2. Click on or mark a notification as “Read.”
 
-**Expected Result:**  The notification status updates, and it is no longer marked as unread.
+**Expected Result:**  The notification status should update, and it is no longer marked as unread.
+
+**Actual Result:**  The notification history shows zero notifications.
 
 ---
 
@@ -2060,7 +2076,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 1. Navigate to the full notification history or archive section.
 
-**Expected Result:**  The user can view a chronological list of past notifications.
+**Expected Result:**  The user should be able to view a chronological list of past notifications.
+
+**Actual Result:**  The user can view a chronological list of past notifications.
 
 ---
 
@@ -2168,7 +2186,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** All interactive elements should be accessible via keyboard.
 
-**Expected Result:** All interactive elements are keyboard accessible.
+**Actual Result:** All interactive elements are keyboard accessible.
 
 ---
 
@@ -2523,6 +2541,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 2. Observe feedback or help links provided by the system.
 
 **Expected Result:**  The system should show guidance like: "Upload must be under 5MB. Only JPG and PNG formats are supported."
+
+**Actual Result:**  The system shows guidance like: "Upload must be under 5MB. Only JPG and PNG formats are supported."
+
 
 ---
 
