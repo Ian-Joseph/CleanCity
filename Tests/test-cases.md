@@ -1908,6 +1908,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The admin can perform moderation actions (e.g., edit, hide, or flag) on posts or comments.
 
+**Actual Result:**  The admin cannot perform moderation actions (e.g., edit, hide, or flag) on posts or comments. <!--fails-->
+
 ---
 
 ## TC-062-01: Verify that admins can delete inappropriate content
@@ -1924,7 +1926,9 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 3. Click “Delete” on the content.  
 4. Confirm the deletion.
 
-**Expected Result:** The selected inappropriate content is removed from the system.
+**Expected Result:** The selected inappropriate content should be removed from the system.
+
+**Actual Result:** Admin cannot delete inappropriate content <!--fails-->
 
 ---
 
@@ -1943,6 +1947,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The content is flagged and appears in the admin moderation queue.
 
+**Actual Result:** Users cannot  flag or report content <!--fails -->
+
 ---
 
 ## TC-064-01: Verify that admins can create announcements
@@ -1959,6 +1965,8 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 4. Click “Publish.”
 
 **Expected Result:**  The announcement is visible to users in the appropriate section (e.g., dashboard, news feed).
+
+**Actual Result:**  Admin cannot create announcement <!--fails -->
 
 ---
 
