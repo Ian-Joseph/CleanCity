@@ -7,6 +7,19 @@
 - [Requests more than 24 hours away are not modifiable #11](https://github.com/Ian-Joseph/CleanCity/issues/11)
 - [Request less than 24 hours are not modifiable #12](https://github.com/Ian-Joseph/CleanCity/issues/12)
 - [Status for the requests are not displayed #13](https://github.com/Ian-Joseph/CleanCity/issues/13)
+- [System allows account registration with existing email #2](https://github.com/Ian-Joseph/CleanCity/issues/2)
+- [Registration Form Missing Confirm Password Field, Password Mismatch Validation Not Possible #3](https://github.com/Ian-Joseph/CleanCity/issues/3)
+- [Account created with too short password #4](https://github.com/Ian-Joseph/CleanCity/issues/4)
+- [Account is created with invalid email format #5](https://github.com/Ian-Joseph/CleanCity/issues/5)
+- [Login Successful with Incorrect Passwordl #6](https://github.com/Ian-Joseph/CleanCity/issues/6)
+- [Real-time validation not triggering #14](https://github.com/Ian-Joseph/CleanCity/issues/14)
+- [User-generated content not sanitized #15](https://github.com/Ian-Joseph/CleanCity/issues/15)
+- [SQL Injection and XSS not prevented #16](https://github.com/Ian-Joseph/CleanCity/issues/16)
+- [The system fails to meet WCAG 2.1 AA compliance due to low color contrast between foreground text and background elements in multiple UI components. #17](https://github.com/Ian-Joseph/CleanCity/issues/17)
+- [Admin moderation panel missing  #18]()
+- [Pickup requests not displayed #19](https://github.com/Ian-Joseph/CleanCity/issues/19)
+
+
 
 ## Access Control
 
