@@ -10,8 +10,8 @@
 |-----------|-------------|
 | **Project** | CleanCity - Waste Pickup Scheduler |
 | **Repository** | <https://github.com/Ian-Joseph/CleanCity.git> |
-| **Test Period** | June 28, 2025 - July 9, 2025 |
-| **Report Date** | July 9, 2025 |
+| **Test Period** | June 28, 2025 - July 16, 2025 |
+| **Report Date** | July 16, 2025 |
 | **Version** | 1.0 |
 | **Prepared By** | QA Team (Bednah, Ian, Wisani) |
 | **Reviewed By** | Ian (QA Lead) |
@@ -24,9 +24,9 @@ The CleanCity web application underwent comprehensive testing covering functiona
 
 ### **Key Findings:**
 
-- ✅ **Authentication system** functions correctly
 - ✅ **Basic form submissions** work as designed
 - ✅ **UI responsiveness** meets requirements
+- ❌ **Authentication system** Dooes not function correctly
 - ❌ **Critical failures** in pickup request management
 - ❌ **Security vulnerabilities** in admin access control
 - ❌ **Data persistence issues** affecting user experience
@@ -228,6 +228,13 @@ The automated test suite (`cleancity_automation.py`) was executed successfully w
 
 #### Overall Requirements Coverage: 100%
 
+```mermaid  
+pie  
+    title Requirements Coverage
+    "Covered" : 100.0 
+    "Un-covered" : 0.0  
+```
+
 ---
 
 ## 🎯 **Quality Assessment**
@@ -347,6 +354,27 @@ None identified.
 - **Critical Defect Rate:** 85.7% of total defects
 - **Test Case Pass Rate:** 49%
 - **Requirements Coverage:** 100%
+
+```mermaid  
+pie  
+    title Test Case Pass Rate 
+    "Passed Test Cases" : 49.0  
+    "Failed Test Cases" : 51.0
+```  
+
+```mermaid  
+pie  
+    title Critical Defect Rate
+    "Critical" : 85.7
+    "Non-Critical" : 14.3  
+```  
+
+```mermaid  
+pie  
+    title Defect Density(per 100 test cases)
+    "Defects" : 7.6  
+    "Non-defects" :  92.4  
+```  
 
 ### **Effort Metrics**
 
