@@ -1166,7 +1166,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The blog post is removed from the system.
 
-**Actual Result:** Authorized users cannot delete blog posts.
+**Actual Result:** Authorized users cannot delete blog posts. <!--fail -->
 
 ---
 
@@ -1670,7 +1670,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  All pickup requests should be displayed in a table.
 
-**Actual Result:**  All pickup requests are displayed in a list or table.
+**Actual Result:**  All pickup requests are not displayed in a list or table. <!--fails -->
 
 ---
 
@@ -1826,7 +1826,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The selected user’s role is updated and reflected in their profile.
 
-**Actual Result:**  Admins cannot change user roles.
+**Actual Result:**  Admins cannot change user roles. <!--fails -->
 
 ---
 
@@ -1846,7 +1846,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The user’s account status changes to “Suspended.”
 
-**Actual Result:**  Admin cannot suspend registered user accounts
+**Actual Result:**  Admin cannot suspend registered user accounts <!--fails-->
 
 ---
 
@@ -1866,7 +1866,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The user account is permanently removed from the system.
 
-**Actual Result:**  Admins cannot delete user accounts
+**Actual Result:**  Admins cannot delete user accounts <!--fails -->
 
 ---
 
@@ -1884,7 +1884,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:**  The report displays user activities such as logins, posts, pickups, or other tracked actions.
 
-**Atual Result:**  The system does not provide user activity reports.
+**Atual Result:**  The system does not provide user activity reports. <!--fails-- >
 
 ---
 
@@ -1988,7 +1988,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The notification bell displays a badge showing the number of unread notifications.
 
-**Actual Result:** The notification bell doesn't display a badge showing the number of unread notifications.
+**Actual Result:** The notification bell doesn't display a badge showing the number of unread notifications. <!--fails -- >
 
 ---
 
@@ -2025,7 +2025,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** A notification for the new blog post is displayed.
 
-**Actual Result:** **Blocked** Admins cannot publish new blog
+**Actual Result:** **Blocked** Admins cannot publish new blog <!--fails -->
 
 ---
 
@@ -2615,7 +2615,7 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 
 **Expected Result:** The form should not submitted and validation errors should be displayed, preventing incomplete or incorrect submissions.
 
-**Actual Result:** The form should is not submitted and validation errors are displayed, preventing incomplete or incorrect submissions.
+**Actual Result:** The form is not submitted and validation errors are displayed, preventing incomplete or incorrect submissions.
 
 ---
 
