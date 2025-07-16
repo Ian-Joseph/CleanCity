@@ -33,7 +33,9 @@
 2. Copy admin URL and visit as regular user
 
 **Expected**: Access denied or redirected
-**Actual**: Site replicates with no authentication needed and user can access anything the admin has rights to.  
+
+**Actual**: Site replicates with no authentication needed and user can access anything the admin has rights to. 
+
 **Severity**: Critical
 
 ## Bug Report 2
@@ -69,7 +71,9 @@
 4. Alternatively navigate to the user profile and check on 'My Requests'
 
 **Expected Result:** List of all pickup requests displayed
+
 **Actual Result:** No requests displayed. No scheduled requests were logged.
+
 **Severity**: Critical
 
 ## Bug Report 4
@@ -86,7 +90,9 @@
 6. Click cancel
 
 **Expected Result:** Status changes to Cancelled
+
 **Actual Result:** No pending requests displayed. No scheduled requests were logged. No request was at all logged.
+
 **Severity**: Critical
 
 ## Bug Report 5
@@ -103,7 +109,9 @@
 6. Update details (e.g., quantity)
 
 **Expected Result:** Details updated successfully
+
 **Actual Result:** No requests displayed. No scheduled requests were logged. No request was at all logged.
+
 **Severity**: Critical
 
 ## Bug Report 6
@@ -119,8 +127,10 @@
 5. Select request with pickup time less than 24 hours away  
 6. Attempt to modify details  
 
-**Expected Result:** Error – modification not allowed
+**Expected Result:** Error – modification not allowed.
+
 **Actual Result:** No requests displayed. No scheduled requests were logged. No request was at all logged.
+
 **Severity**: Critical
 
 ## Bug Report 7
