@@ -26,7 +26,7 @@ The CleanCity web application underwent comprehensive testing covering functiona
 
 - ✅ **Basic form submissions** work as designed
 - ✅ **UI responsiveness** meets requirements
-- ❌ **Authentication system** Dooes not function correctly
+- ❌ **Authentication system** Does not function correctly
 - ❌ **Critical failures** in pickup request management
 - ❌ **Security vulnerabilities** in admin access control
 - ❌ **Data persistence issues** affecting user experience
@@ -243,7 +243,7 @@ pie
 
 - **Score:** 2/5 (Poor)
 - **Reason:** Core functionality (pickup request management) is completely broken
-- **Impact:** Application cannot fulfill its primary purpose
+- **Impact:** Application cannot fulfil its primary purpose
 
 ### **Security Quality**
 
@@ -296,7 +296,7 @@ None identified.
    - Validate user permissions on all admin functions
 
 2. **🔴 CRITICAL - Fix Data Persistence**
-   - Implement proper localStorage integration
+   - Implement proper local storage integration
    - Ensure pickup requests are stored and retrievable
    - Add data validation and error handling
 
