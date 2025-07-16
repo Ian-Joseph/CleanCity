@@ -151,6 +151,7 @@ The CleanCity application is designed to help users schedule waste pickups, repo
 | JIRA            | Test case tracking and defect logging |
 | Chrome DevTools | Responsive & performance testing      |
 | Jest            | Unit testing for JS components        |
+| Selenium        | Unit testing                          |
 | Postman         | (Optional) API sanity checks          |
 | GitHub Issues   | Lightweight bug tracking              |
 

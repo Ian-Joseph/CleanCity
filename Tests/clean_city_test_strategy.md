@@ -166,6 +166,7 @@ The purpose of this Test Strategy is to outline a structured approach for testin
 | JIRA            | Test case tracking and defect logging |
 | Chrome DevTools | Responsive & performance testing      |
 | Jest            | Unit testing for JS components        |
+| Selenium        | Unit testing                          |
 | Postman         | (Optional) API sanity checks          |
 | GitHub Issues   | Lightweight bug tracking              |
 
