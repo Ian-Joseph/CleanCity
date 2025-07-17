@@ -2636,3 +2636,77 @@ The test cases cover both **functional** and **non-functional** aspects of the s
 **Actual Result:**  Invalid fields are clearly highlighted (e.g., red border or icon), and error messages are shown near the relevant input.
 
 ---
+## 🔍 Overall Test Status Summary
+| Category                  | Passed | Failed | Blocked | Not Executed | Critical Issues |
+|---------------------------|--------|--------|---------|---------------|-----------------|
+| Registration              | 2      | 4      | 0       | 0             | 2               |
+| Login                    | 2      | 4      | 0       | 0             | 3               |
+| Logout                   | 3      | 0      | 0       | 0             | 0               |
+| Access Control           | 4      | 0      | 0       | 0             | 0               |
+| UI/Usability             | 4      | 1      | 0       | 0             | 0               |
+| Pickup Scheduling        | 2      | 6      | 0       | 0             | 2               |
+| Request Management       | 0      | 5      | 0       | 0             | 5               |
+| Request Tracking         | 0      | 2      | 1       | 0             | 2               |
+| Dashboard & Analytics    | 1      | 8      | 0       | 0             | 2               |
+| Gamification             | 0      | 7      | 2       | 1             | 4               |
+| Blog Features            | 6      | 6      | 0       | 0             | 3               |
+| Community Features       | 10     | 1      | 0       | 0             | 1               |
+| Admin Functions          | 3      | 10     | 0       | 0             | 5               |
+| Notifications            | 2      | 4      | 2       | 0             | 3               |
+| Data Management          | 3      | 4      | 0       | 1             | 2               |
+| Security & Validation    | 0      | 2      | 0       | 0             | 2               |
+| Performance              | 2      | 0      | 0       | 0             | 0               |
+| Compatibility            | 4      | 0      | 0       | 0             | 0               |
+| Error Handling           | 3      | 0      | 0       | 0             | 0               |
+| Form Validation          | 2      | 1      | 0       | 0             | 0               |
+
+---
+
+## ⚠️ Critical Failures
+
+### 🛡️ Authentication Issues
+- Password mismatch, weak password, and existing email are not properly validated.
+- Admin panel access is inconsistently rendered.
+
+### 🛋 Waste Pickup Scheduling
+- Allows invalid dates and duplicate bookings.
+- Required fields (e.g., quantity, instructions) are missing.
+- Time slot view and 24-hour rule validations fail.
+
+### ⚖️ Request Lifecycle
+- No pickup requests are stored or retrievable.
+- Status updates (Pending, Confirmed, Completed) are not reflected.
+- Cannot modify or cancel requests.
+
+### 🔐 Security Failures
+- SQL Injection and XSS attacks not blocked.
+- User-generated content is not sanitized.
+
+### 🌟 Gamification Breakdown
+- Badges, points, levels, and feedback loop are missing.
+- User progression and engagement mechanisms fail entirely.
+
+### 👥 Admin Control Failures
+- Admin cannot view or manage users and requests.
+- Role changes, suspensions, and deletions do not work.
+- Content moderation and announcements are not supported.
+
+---
+
+
+
+##  Execution Status vs. Functional Requirements
+| Functional Area       | Status Summary                                           |
+|----------------------|-----------------------------------------------------------|
+| Authentication        | Partially implemented, insecure                         |
+| Waste Management      | Mostly broken; core features fail                       |
+| Request Lifecycle     | Non-functional; data not persisted                      |
+| Dashboard             | UI loads, data missing                                  |
+| Gamification          | Entirely missing                                        |
+| Community             | Mostly functional                                       |
+| Admin Panel           | Severely broken                                         |
+| Notifications         | Partially blocked                                       |
+| Security              | Vulnerable                                              |
+| UI/Accessibility      | Mostly compliant, some issues                           |
+
+---
